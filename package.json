@@ -1,0 +1,15 @@
+{
+  "name": "logcat",
+  "author": {
+    "name": "Spirin Vladimir",
+    "email": "spirin.vladimir@gmail.com"
+  },
+  "dependencies": {
+    "express.io": "*",
+    "colors": "*"
+  },
+  "version": "0.0.1",
+  "scripts": {
+        "start": "node app.js"
+  }
+}
