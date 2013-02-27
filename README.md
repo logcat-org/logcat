@@ -131,3 +131,5 @@ app.listen(80);
 ```
 
 &copy; Spirin Vladimir
+
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/f47d675d50eb1ba7a9c294acd689b9a8 "githalytics.com")](http://githalytics.com/spirinvladimir/logcat)
