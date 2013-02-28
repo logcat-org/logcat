@@ -2,13 +2,15 @@
 
 [![Dependency Status](https://gemnasium.com/spirinvladimir/logcat.png)](https://gemnasium.com/spirinvladimir/logcat)
 
-## How to run:
+## How to start using:
 
-    $ npm install logcat && cd node_modules/logcat && node app
+ install:
 
- or
+    $ npm install -g logcat
 
-    $ git clone git://github.com/spirinvladimir/logcat.git && cd logcat && node app
+ use
+
+    $ logcat
 
 ## Description:
 

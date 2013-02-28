@@ -5,9 +5,9 @@
     "express.io": "*",
     "colors": "*"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
-    "start": "node app.js"
+    "test": ""
   },
   "description": "",
   "main": "app.js",
@@ -15,6 +15,9 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/spirinvladimir/logcat.git"
+  },
+  "bin": {
+    "logcat": "./bin/logcat"
   },
   "keywords": [
     "adb",
