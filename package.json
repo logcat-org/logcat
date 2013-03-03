@@ -7,11 +7,13 @@
   },
   "version": "0.0.3",
   "scripts": {
-    "test": ""
+    "test": "mocha test/app.js"
   },
   "description": "",
   "main": "app.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "supertest": "~0.5.1"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/spirinvladimir/logcat.git"
