@@ -60,4 +60,4 @@ logcat.on('exit', function (code) {
 	logcat = spawn('adb', ['logcat']);
 });
 
-app.listen(80);
+module.exports = app;

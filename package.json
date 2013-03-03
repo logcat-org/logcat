@@ -12,7 +12,8 @@
   "description": "",
   "main": "app.js",
   "devDependencies": {
-    "supertest": "~0.5.1"
+    "supertest": "~0.5.1",
+    "should": "~1.2.2"
   },
   "repository": {
     "type": "git",

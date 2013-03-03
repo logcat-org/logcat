@@ -1,3 +1,4 @@
 #!/usr/bin/env node
 
-require('../app.js');
+var app = require('../app.js');
+app.listen(80);
