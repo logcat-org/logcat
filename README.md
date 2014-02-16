@@ -135,3 +135,7 @@ app.listen(80);
 &copy; Spirin Vladimir
 
 [![githalytics.com alpha](https://cruel-carlota.pagodabox.com/f47d675d50eb1ba7a9c294acd689b9a8 "githalytics.com")](http://githalytics.com/spirinvladimir/logcat)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/spirinvladimir/logcat/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
