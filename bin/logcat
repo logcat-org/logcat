@@ -1,4 +1,6 @@
 #!/usr/bin/env node
 
+var argv = process.argv.slice(2);
+
 var app = require('../app.js');
-app.listen(80);
+app.listen(parseInt(argv[0], 10) || 80);
