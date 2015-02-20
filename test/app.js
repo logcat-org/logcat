@@ -1,6 +1,6 @@
 var request = require('supertest'),
     should = require('should'),
-    app = require('../app.js');
+    app = require('../index.js');
     
 describe('Response html with 200', function () {
     it('should be responded as html', function (done) {
@@ -17,7 +17,6 @@ describe('GET /', function () {
             .get('/')
             .end(function (err, res) {
                 if (err) return done(err);
-                //res.text.should.include('logcat');
                 should.exist(res);
                 should.exist(res.body);
                 res.should.have.property('ok', true);

@@ -2,15 +2,15 @@
   "name": "logcat",
   "author": "Spirin Vladimir <spirin.vladimir@gmail.com>",
   "dependencies": {
+    "colors": "*",
     "express.io": "*",
-    "colors": "*"
+    "mocha": "^2.1.0"
   },
   "version": "0.0.3",
   "scripts": {
     "test": "mocha test/app.js"
   },
   "description": "",
-  "main": "app.js",
   "devDependencies": {
     "supertest": "~0.5.1",
     "should": "~1.2.2"
