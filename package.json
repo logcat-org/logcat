@@ -3,17 +3,17 @@
   "author": "Spirin Vladimir <spirin.vladimir@gmail.com>",
   "dependencies": {
     "colors": "*",
-    "express.io": "*",
-    "mocha": "^2.1.0"
+    "express.io": "*"
   },
-  "version": "0.0.3",
+  "version": "0.0.5",
   "scripts": {
     "test": "mocha test/app.js"
   },
   "description": "",
   "devDependencies": {
     "supertest": "~0.5.1",
-    "should": "~1.2.2"
+    "should": "~1.2.2",
+    "mocha": "^2.1.0"
   },
   "repository": {
     "type": "git",
