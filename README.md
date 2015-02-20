@@ -131,7 +131,7 @@ app.listen(80);
 </html>
 ```
 
-Author: [![Spirin Vladimir][gratipay-image]][gratipay-url]
+Author: [Spirin Vladimir](https://github.com/spirinvladimir) [![Spirin Vladimir][gratipay-image]][gratipay-url]
 
 [gratipay-image]: https://img.shields.io/gratipay/spirinvladimir.svg?style=flat
 [gratipay-url]: https://gratipay.com/spirinvladimir/
