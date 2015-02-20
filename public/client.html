@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>adb logcat</title>
+		<title>logcat</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<script src="js/jquery-1.9.1.min.js"></script>
@@ -8,11 +8,12 @@
 		<script src="/socket.io/socket.io.js"></script>
 		<script>
 			if (document.addEventListener) {
-				document.addEventListener('DOMContentLoaded', function() {
-					var socket = io.connect();
-					var table = document.createElement("tbody");
+				document.addEventListener('DOMContentLoaded', function () {
+					var socket = io.connect(),
+					    table = document.createElement("tbody"),
+                        firstChild;
 					document.getElementsByTagName("table")[0].appendChild(table);
-					var firstChild = table.firstChild;
+					firstChild = table.firstChild;
 					socket.on('line', function (x) {
 						var tr = document.createElement("tr");
 						tr.appendChild(document.createElement("td")).appendChild(document.createTextNode(x.line));

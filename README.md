@@ -1,4 +1,6 @@
-# logcat #
+## Description:
+
+ Monitor android
 
 [![Dependency Status](https://gemnasium.com/spirinvladimir/logcat.png)](https://gemnasium.com/spirinvladimir/logcat)
 
@@ -11,10 +13,6 @@
  use
 
     $ logcat
-
-## Description:
-
- This is tool for debug android applications.
 
 ## Screen shots:
 
@@ -104,7 +102,7 @@ app.listen(80);
 ```html
 <html>
 	<head>
-		<title>adb logcat</title>
+		<title>logcat</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<script src="js/jquery-1.9.1.min.js"></script>
@@ -112,11 +110,12 @@ app.listen(80);
 		<script src="/socket.io/socket.io.js"></script>
 		<script>
 			if (document.addEventListener) {
-				document.addEventListener('DOMContentLoaded', function() {
-					var socket = io.connect();
-					var table = document.createElement("tbody");
+				document.addEventListener('DOMContentLoaded', function () {
+					var socket = io.connect(),
+                        table = document.createElement("tbody"),
+                        firstChild;
 					document.getElementsByTagName("table")[0].appendChild(table);
-					var firstChild = table.firstChild;
+					firstChild = table.firstChild;
 					socket.on('line', function (x) {
 						var tr = document.createElement("tr");
 						tr.appendChild(document.createElement("td")).appendChild(document.createTextNode(x.line));
@@ -132,14 +131,7 @@ app.listen(80);
 </html>
 ```
 
-&copy; Spirin Vladimir
+Author: [![Spirin Vladimir][gratipay-image]][gratipay-url]
 
-[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/f47d675d50eb1ba7a9c294acd689b9a8 "githalytics.com")](http://githalytics.com/spirinvladimir/logcat)
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/spirinvladimir/logcat/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/spirinvladimir/logcat/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
+[gratipay-image]: https://img.shields.io/gratipay/spirinvladimir.svg?style=flat
+[gratipay-url]: https://gratipay.com/spirinvladimir/
