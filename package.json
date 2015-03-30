@@ -5,7 +5,7 @@
     "colors": "*",
     "express.io": "*"
   },
-  "version": "0.0.6",
+  "version": "0.0.7",
   "scripts": {
     "test": "mocha test/app.js"
   },
