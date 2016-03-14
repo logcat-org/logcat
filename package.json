@@ -2,10 +2,10 @@
   "name": "logcat",
   "author": "Spirin Vladimir <spirin.vladimir@gmail.com>",
   "dependencies": {
-    "colors": "*",
-    "express.io": "*"
+    "colors": "1.1.2",
+    "express.oi": "0.0.20"
   },
-  "version": "0.0.7",
+  "version": "0.0.8",
   "scripts": {
     "test": "mocha test/app.js"
   },
@@ -27,6 +27,6 @@
     "logcat",
     "viewer"
   ],
-  "license": "BSD",
+  "license": "UNLICENSED",
   "gitHead": "c61ed2f62335192a6a9fe3504da90d4c644b7d03"
 }

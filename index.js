@@ -1,7 +1,7 @@
 /*jslint node:true,nomen:true*/
 var util = require('util'),
 	colors = require('colors'),
-	app = require('express.io')(),
+	app = require('express.oi')(),
 	spawn = require('child_process').spawn,
     logcat = spawn('adb', ['logcat']),
 	state = {
@@ -29,29 +29,28 @@ var util = require('util'),
                         }
                     });
                 }
-                
+
                 if (type.indexOf('error') >= 0) {
                     console.log(line.red.bold);
-                    app.io.broadcast('line', {'line': line, 'type': 'error'});
+                    app.io.emit('line', {'line': line, 'type': 'error'});
                 } else if (type.indexOf('warning') >= 0) {
                     console.log(line.yellow.bold);
-                    app.io.broadcast('line', {'line': line, 'type': 'warning'});
+                    app.io.emit('line', {'line': line, 'type': 'warning'});
                 } else if (type.indexOf('success') >= 0) {
                     console.log(line.green.bold);
-                    app.io.broadcast('line', {'line': line, 'type': 'success'});
+                    app.io.emit('line', {'line': line, 'type': 'success'});
                 } else {
                     console.log(line.blue.bold);
-                    app.io.broadcast('line', {'line': line, 'type': type[0]});
+                    app.io.emit('line', {'line': line, 'type': type[0]});
                 }
             }
         });
     };
 
 app.http().io();
-app.get('/', function (req, res) {'use strict'; res.sendfile(__dirname + '/public/client.html'); });
-app.get('/js/jquery-1.9.1.min.js', function (req, res) {'use strict'; res.sendfile(__dirname + '/public/js/jquery-1.9.1.min.js'); });
-app.get('/js/bootstrap.min.js', function (req, res) {'use strict'; res.sendfile(__dirname + '/public/js/bootstrap.min.js'); });
-app.get('/css/bootstrap.min.css', function (req, res) {'use strict'; res.sendfile(__dirname + '/public/css/bootstrap.min.css'); });
+app.get('/', function (req, res) {'use strict'; res.sendFile(__dirname + '/public/client.html'); });
+app.get('/js/bootstrap.min.js', function (req, res) {'use strict'; res.sendFile(__dirname + '/public/js/bootstrap.min.js'); });
+app.get('/css/bootstrap.min.css', function (req, res) {'use strict'; res.sendFile(__dirname + '/public/css/bootstrap.min.css'); });
 
 logcat.stdout.on('data', function (data) {'use strict'; parseStdout(data); });
 logcat.stderr.on('data', function (data) {'use strict'; parseStdout(data, 'error'); });
