@@ -1,6 +1,5 @@
 #!/usr/bin/env node
+const
+    logcat = require('../index');
 
-var argv = process.argv.slice(2);
-
-var app = require('../index.js');
-app.listen(parseInt(argv[0], 10) || 80);
+logcat();
