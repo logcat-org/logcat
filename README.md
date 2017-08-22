@@ -4,11 +4,11 @@ Monitor android
 
 ## Install:
 
-$ npm i -g logcat
+``$ npm i -g logcat``
 
 ## Use:
 
-$ logcat
+``$ logcat``
 
 ## Screen shots:
 
