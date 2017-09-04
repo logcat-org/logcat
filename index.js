@@ -1,13 +1,12 @@
 const
 	util = require('util'),
 	spawn = require('child_process').spawn,
-	logcat = spawn('adb', ['logcat']),
 	check = require('./lib/check'),
 	lines = require('./lib/lines'),
 	web = require('./lib/web'),
 	console = require('console-logger-api');
 
-module.exports = () => {
+module.exports = (command) => {
 	const
 		server = web(),
 		onError = (data) => {
@@ -15,7 +14,9 @@ module.exports = () => {
 				console.error(line);
 				server.error(line);
 			});
-		};
+		},
+		args = command.split(' '),
+		logcat = spawn(args.shift(), args);
 
 	logcat.stdout.on('data', (data) => {
 		check(lines(data)).forEach((lineWithType) => {

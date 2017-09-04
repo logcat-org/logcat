@@ -2,4 +2,4 @@
 const
     logcat = require('../index');
 
-logcat();
+logcat('adb logcat');
