@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 const
+	web = require('../lib/web'),
+	console = require('console-logger-api'),
     logcat = require('../index');
 
-logcat('adb logcat');
+logcat('adb logcat', [web(), console]);

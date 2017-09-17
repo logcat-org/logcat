@@ -1,9 +1,10 @@
 {
   "name": "logcat",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Spirin Vladimir <spirin.vladimir@gmail.com>",
   "dependencies": {
     "console-logger-api": "2.0.0",
+    "@logcat-org/web-log": "1.0.2",
     "ws": "3.1.0"
   },
   "scripts": {
