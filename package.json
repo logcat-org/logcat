@@ -1,6 +1,6 @@
 {
   "name": "logcat",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Spirin Vladimir <spirin.vladimir@gmail.com>",
   "dependencies": {
     "console-logger-api": "2.0.0",
