@@ -1,5 +1,3 @@
-[![Dependency Status](https://gemnasium.com/spirinvladimir/logcat.png)](https://gemnasium.com/spirinvladimir/logcat)
-
 Android monitor in console & browser
 
 ## Install:
